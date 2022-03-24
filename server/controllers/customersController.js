@@ -8,8 +8,8 @@ const getForm = (request, response) => {
 
 const createCustomer = async (req, res) => {
   try {
-    const plant = await new Customer(req.body)
-    await plant.save()
+    const customer = await new Customer(req.body)
+    await customer.save()
     return res.status(201).json({
       customer
     })
