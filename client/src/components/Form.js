@@ -4,7 +4,13 @@ const Form = () => {
   return (
     <div>
       <form>
-        <input></input>
+        <input
+          type="text"
+          value={newBoat.name}
+          onChange={props.handleChange}
+          name={'name'}
+          placeholder={'name'}
+        />
         <input></input>
         <input></input>
         <input></input>
