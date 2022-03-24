@@ -1,4 +1,4 @@
-const Customer = require('../models/Customer')
+const { Customer } = require('../models')
 
 const getForm = (request, response) => {
   response.send({
@@ -7,8 +7,10 @@ const getForm = (request, response) => {
 }
 
 const createCustomer = async (req, res) => {
+  console.log(req.body)
   try {
     const customer = await new Customer(req.body)
+
     await customer.save()
     return res.status(201).json({
       customer
