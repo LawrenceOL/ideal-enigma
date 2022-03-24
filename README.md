@@ -28,5 +28,3 @@ _(Add Structure & Logic Here Later)_
 **_Credits_**
 
 Michael Lackey | John Jacobs
-
-> > > > > > > 555c70cafda8599d3d79b60886937040ecb9033c
