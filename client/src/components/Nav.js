@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 
-function NavBar() {
+const Nav = () => {
   return (
-    <div className="navbar">
+    <div className="nav">
       <Link to="/">Home</Link>
     </div>
   )
 }
 
-export default NavBar
+export default Nav
