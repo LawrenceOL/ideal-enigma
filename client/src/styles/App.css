@@ -1,18 +1,22 @@
 body {
-  font-family: 'Caesar Dressing', cursive;
+  font-family: 'EB Garamond', serif;
+  background-image: url('https://imgur.com/ubroQlk.jpg');
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 
 .Nav {
   font-family: 'Caesar Dressing', cursive;
   font-size: large;
   text-transform: uppercase;
-  background-color: black;
+  background-color: transparent;
   text-align: right;
   padding: 1em;
+  color: black;
 }
 
 .Nav a {
-  color: white;
+  color: black;
   font-size: 1.5em;
 }
 
@@ -24,18 +28,30 @@ body {
   text-decoration: underline;
 }
 
+.Nav p {
+  display: inline;
+  font-size: 4em;
+  margin-right: 1.75em;
+  letter-spacing: 0.1em;
+  color: black;
+}
+
+.Nav span {
+  text-align: center;
+}
+
 .Home {
   text-align: center;
 }
 
 .Home h1 {
+  font-family: 'Caesar Dressing', cursive;
   font-size: 4em;
   letter-spacing: 0.15em;
 }
 
 .Home p {
   font-size: 2em;
-  letter-spacing: 0.15em;
 }
 
 .Form {

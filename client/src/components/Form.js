@@ -1,32 +1,8 @@
-import { Link } from 'react-router-dom'
-import axios from 'axios'
-import { useState } from 'react'
-
-const Form = () => {
-  const [info, setInfo] = useState({
-    first: '',
-    last: '',
-    email: ''
-  })
-
-  // Fx needed to store the first 3 input values (axios.post), the last 2 values need to be reset
-
-  // const handleChange = (e) => {
-  //   const updateForm =
-  // Store info.first
-  // Store info.last
-  // Store info.email
-  //     setInfo(updateForm)
-  // }
-
-  // const submitForm = async () => {
-  //   let userInfo = await axios.post('/', (req, res) => {})
-  // }
-
+const Form = ({ info, handleChange, submitForm }) => {
   return (
     <div className="Form">
       <h1>Purchase Details</h1>
-      <form>
+      <form onSubmit={submitForm}>
         <input
           type="text"
           value={info.first}
