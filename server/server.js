@@ -18,7 +18,8 @@ app.get('/', (req, res) => {
   res.send('This is the root')
 })
 
-app.get('/customers', customersController.getCustomers)
+app.get('/form', customersController.getForm)
+app.post('/form', customersController.postForm)
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)

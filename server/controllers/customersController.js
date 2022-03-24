@@ -1,9 +1,14 @@
-const getCustomers = (request, response) => {
+const getForm = (request, response) => {
   response.send({
-    message: 'Getting Customers'
+    message: 'Here is the form'
   })
 }
 
+const postForm = (req, res) => {
+  res.send(req.body)
+}
+
 module.exports = {
-  getCustomers
+  getForm,
+  postForm
 }
