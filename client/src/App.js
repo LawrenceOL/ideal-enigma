@@ -1,11 +1,11 @@
+import axios from 'axios'
 import { Routes, Route, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Form from './components/Form'
 import Confirm from './components/Confirm'
 import './styles/App.css'
-import axios from 'axios'
-import { useState } from 'react'
 
 function App() {
   const [info, setInfo] = useState({
@@ -18,15 +18,15 @@ function App() {
   // Fx needed to store the first 3 input values (axios.post), the last 2 values need to be reset
 
   const handleChange = (e) => {
-    const updateForm = {
+    const updatedForm = {
       ...info,
       [e.target.name]: e.target.value
     }
-    setInfo(updateForm)
+    setInfo(updatedForm)
   }
 
   const submitForm = async () => {
-    let userInfo = await axios.post('/createCustomer', info)
+    // let userInfo = await axios.post('/createCustomer', info)
     navigate('/confirm')
   }
 

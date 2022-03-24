@@ -1,7 +1,10 @@
-import { Link } from 'react-router-dom'
-
 const Confirm = () => {
-  return <div></div>
+  return (
+    <div>
+      Congratulations warrior! You are officially welcome to enter Valhalla
+      Land!
+    </div>
+  )
 }
 
 export default Confirm

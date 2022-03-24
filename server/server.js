@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/form', customersController.getForm)
-app.post('/createCustomer', customersController.createCustomer)
+app.post('/form', customersController.createCustomer)
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
