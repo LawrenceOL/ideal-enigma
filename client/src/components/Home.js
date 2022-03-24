@@ -6,7 +6,8 @@ const Home = () => {
       <div className="paragraph">
         <p>
           Welcome great warriors. Venture forth into the land of Valhalla!
-          Adventure awaits ...{' '}
+          Adventure, danger, and Adventure awaits ...{' '}
+          <button>Tokens Available Here</button>
         </p>
       </div>
     </div>
