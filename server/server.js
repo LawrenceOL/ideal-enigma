@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
 app.get('/form', customersController.getForm)
 app.post('/form', customersController.createCustomer)
 
+app.get('/ticketId', ticketsController.getId)
+
 //gets number of tickets available
 app.get('/ticketcount', ticketsController.getTicketCount)
 
