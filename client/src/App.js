@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Routes, Route, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, use } from 'react'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Form from './components/Form'
@@ -8,6 +8,7 @@ import Confirm from './components/Confirm'
 import './styles/App.css'
 
 function App() {
+  // const [tickets, setTickets] = useState('')
   const [info, setInfo] = useState({
     first_name: '',
     last_name: '',
@@ -17,6 +18,11 @@ function App() {
 
   let navigate = useNavigate()
   // Fx needed to store the first 3 input values (axios.post), the last 2 values need to be reset
+
+  // const getTickets = () => {
+  //   let tickets = await axios.get('http://localhost:3001/ticketing')
+  //   setTickets(tickets)
+  // }
 
   const handleChange = (e) => {
     const updatedForm = {
