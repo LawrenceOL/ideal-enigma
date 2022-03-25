@@ -7,8 +7,8 @@ const Home = () => {
   let [customerCount, setCustomerCount] = useState(0)
   let [remainingTickets, setRemainingTickets] = useState(0)
 
-  useEffect(() => {
-    updateRemainingTickets()
+  useEffect(async () => {
+    await updateRemainingTickets()
   }, [customerCount])
 
   const updateRemainingTickets = async () => {
@@ -19,6 +19,7 @@ const Home = () => {
     setTicketCount(newTicketCount.data.tickets)
     setCustomerCount(newCustomerCount)
     setRemainingTickets(ticketCount - customerCount)
+    console.log(ticketCount)
   }
 
   return (

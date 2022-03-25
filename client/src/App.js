@@ -13,7 +13,7 @@ function App() {
     last_name: '',
     email: '',
     phone: '',
-    ticket_id: null
+    ticket_id: ''
   })
 
   let navigate = useNavigate()
@@ -28,8 +28,10 @@ function App() {
 
   const submitForm = async (e) => {
     e.preventDefault()
-    const ticketId = await getRandomTicketId()
-    setInfo({ ...info, ticket_id: ticketId })
+    const ticketId = await getTicketId().then((temp) => temp.data.tickets._id)
+
+    await setInfo({ ...info, ticket_id: `${ticketId}` })
+
     await axios.post('http://localhost:3001/form', info)
     navigate('/confirm')
     setInfo({
@@ -37,11 +39,11 @@ function App() {
       last_name: '',
       email: '',
       phone: '',
-      ticket_id: null
+      ticket_id: ''
     })
   }
 
-  const getRandomTicketId = async () => {
+  const getTicketId = async () => {
     const ticketId = await axios.get('http://localhost:3001/ticketId')
     console.log(ticketId)
     return ticketId
