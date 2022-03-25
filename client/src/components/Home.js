@@ -28,7 +28,9 @@ const Home = () => {
           down Still Fjord ... destiny is yours!
         </p>
         <Link to="/form">
-          <button>Tokens Available Here {remainingTickets}</button>
+          <button>
+            Tokens Available Here {`(Remaining Tickets: ${remainingTickets})`}
+          </button>
         </Link>
       </div>
     </div>
