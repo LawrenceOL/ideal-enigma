@@ -1,4 +1,4 @@
-//stuff we need
+//required
 const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
@@ -6,7 +6,7 @@ const db = require('./db')
 const customersController = require('./controllers/customersController.js')
 const ticketsController = require('./controllers/ticketsController.js')
 
-//middleware goes here
+//middleware
 
 const PORT = process.env.PORT || 3001
 const app = express()

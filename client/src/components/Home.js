@@ -29,7 +29,7 @@ const Home = () => {
         </p>
         <Link to="/form">
           <button>
-            Tokens Available Here {`(Remaining Tickets: ${remainingTickets})`}
+            Tokens Available Here {`(Remaining: ${remainingTickets})`}
           </button>
         </Link>
       </div>
