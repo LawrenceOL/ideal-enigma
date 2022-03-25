@@ -27,8 +27,11 @@ const Home = () => {
           kind of viking. Test your courage on The Summit of Ragnar, or relax
           down Still Fjord ... destiny is yours!
           <br />
+          <br />
+          {`Remaining Tokens: ${remainingTickets}`}
+          <br />
           <Link to="/form">
-            <button>{`Remaining Tickets: ${remainingTickets}`}</button>
+            <button>Purchase Here</button>
           </Link>
         </p>
       </div>
