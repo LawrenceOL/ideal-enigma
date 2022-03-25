@@ -3,12 +3,19 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 const Home = () => {
-  let [ticketCount, setTicketCount] = useState('')
+  let [ticketCount, setTicketCount] = useState(0)
+  let [customerCount, setCustomerCount] = useState(0)
+  let [remainingTickets, setRemainingTickets] = useState(0)
 
-  const getTickets = useEffect(async () => {
-    const ticketCountTemp = await axios.get('http://localhost:3001/ticketing')
-    setTicketCount(ticketCountTemp.data.tickets)
-  }, [])
+  const getRemainingTickets = useEffect(async () => {
+    const newTicketCount = await axios.get('http://localhost:3001/ticketcount')
+    const newCustomerCount = await axios
+      .get('http://localhost:3001/customercount')
+      .then((customerCountObject) => customerCountObject.data.customers)
+    setTicketCount(newTicketCount.data.tickets)
+    setCustomerCount(newCustomerCount)
+    setRemainingTickets(ticketCount - customerCount)
+  }, [customerCount])
 
   return (
     <div className="Home">
@@ -21,7 +28,7 @@ const Home = () => {
           down Still Fjord ... destiny is yours!
         </p>
         <Link to="/form">
-          <button>Tokens Available Here {`${ticketCount}`}</button>
+          <button>Tokens Available Here {remainingTickets}</button>
         </Link>
       </div>
     </div>
