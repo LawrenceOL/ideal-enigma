@@ -6,6 +6,8 @@
 
 <br>
 
+![App](/img/App.png)
+
 ### **_Description_**
 
 This app serves as an amusement park ticketing service for the imaginary theme park Valhalla Land. To purchase a ticket, simply enter your information, click to confirm, and that's it! You're all ready to embark on the Nordic adventure of your dreams!
