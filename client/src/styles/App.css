@@ -54,7 +54,7 @@ body {
 
 .Home p {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 2em;
@@ -66,16 +66,18 @@ body {
 }
 
 .Home button {
-  position: relative;
-  top: 15em;
+  display: inline-block;
   border: none;
+  margin-top: 0.5em;
+  text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   color: whitesmoke;
-  font-size: 2em;
+  font-size: 1em;
   padding: 0.5em;
   font-family: 'Caesar Dressing', cursive;
   letter-spacing: 0.15em;
 }
+
 .Home a:link {
   text-decoration: none;
 }
