@@ -18,11 +18,22 @@ const createCustomer = async (req, res) => {
   }
 }
 
+const getCustomerCount = async (req, res) => {
+  console.log(req.body)
+  try {
+    const customers = await Customer.count()
+    return res.status(200).json({ customers })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
 // const postForm = (req, res) => {
 //   res.send(req.body)
 // }
 
 module.exports = {
   getForm,
-  createCustomer
+  createCustomer,
+  getCustomerCount
 }
