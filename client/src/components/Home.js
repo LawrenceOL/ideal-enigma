@@ -1,6 +1,22 @@
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
+  let [ticketCount, setTicketCount] = useState(0)
+  let [customerCount, setCustomerCount] = useState(0)
+  let [remainingTickets, setRemainingTickets] = useState(0)
+
+  const getRemainingTickets = useEffect(async () => {
+    const newTicketCount = await axios.get('http://localhost:3001/ticketcount')
+    const newCustomerCount = await axios
+      .get('http://localhost:3001/customercount')
+      .then((customerCountObject) => customerCountObject.data.customers)
+    setTicketCount(newTicketCount.data.tickets)
+    setCustomerCount(newCustomerCount)
+    setRemainingTickets(ticketCount - customerCount)
+  }, [customerCount])
+
   return (
     <div className="Home">
       <div className="paragraph">
@@ -12,7 +28,7 @@ const Home = () => {
           down Still Fjord ... destiny is yours!
         </p>
         <Link to="/form">
-          <button>Tokens Available Here</button>
+          <button>Tokens Available Here {remainingTickets}</button>
         </Link>
       </div>
     </div>
