@@ -4,13 +4,13 @@
 
 body {
   font-family: 'EB Garamond', serif;
-  background-image: url('https://imgur.com/ubroQlk.jpg');
-  background-size: 100vw;
+  background-image: url('https://imgur.com/Q6E27Py.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Nav {
-  font-family: 'Caesar Dressing', cursive;
+  font-family: 'Norse';
   font-size: large;
   text-transform: uppercase;
   background-color: transparent;
@@ -21,7 +21,8 @@ body {
 
 .Nav a {
   color: black;
-  font-size: 1.5em;
+  font-size: 2em;
+  letter-spacing: 0.25em;
 }
 
 .Nav a:link {
@@ -32,32 +33,25 @@ body {
   text-decoration: underline;
 }
 
-.Nav p {
-  display: inline;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4em;
-  letter-spacing: 0.1em;
-  color: black;
-  text-align: center;
-}
-
-.Nav span {
-  text-align: center;
-}
-
 .Home {
+  text-align: center;
+}
+
+.Home h1,
+.Form-Container h1,
+.Conf h1 {
+  font-family: 'Norse';
+  font-size: 4em;
+  letter-spacing: 0.5em;
+  margin-top: -0.5em;
   text-align: center;
 }
 
 .Home p {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 2em;
   font-size: 2em;
   background-color: rgba(207, 183, 167, 0.6);
   padding: 1em;
@@ -72,9 +66,9 @@ body {
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   color: whitesmoke;
-  font-size: 1em;
+  font-size: 1.25em;
   padding: 0.5em;
-  font-family: 'Caesar Dressing', cursive;
+  font-family: 'Norse';
   letter-spacing: 0.15em;
 }
 
@@ -83,15 +77,14 @@ body {
 }
 
 .Form {
-  margin-top: 4em;
   position: absolute;
-  width: 25em;
-  height: 30em;
+  width: 30em;
+  height: 35em;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -40%);
   text-align: center;
-  font-family: 'Caesar Dressing', cursive;
+  font-family: 'Norse';
   letter-spacing: 0.15em;
   background-color: rgba(207, 183, 167, 0.6);
   padding: 1em;
@@ -100,15 +93,16 @@ body {
 
 .Form h1 {
   font-size: 2.5em;
+  margin-top: 0.35em;
 }
 
 .Form input {
-  position: relative;
   display: block;
   width: 20em;
   margin-left: 3.5em;
   margin-top: 0.5em;
   padding: 0.75em;
+  font-size: 1em;
 }
 
 .Confirm {
@@ -125,6 +119,10 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    height: 100vh;
+    width: 100%;
+  }
   .Nav p {
     position: absolute;
     display: inline-block;

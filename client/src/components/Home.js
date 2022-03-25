@@ -19,8 +19,9 @@ const Home = () => {
 
   return (
     <div className="Home">
+      <h1>Valhalla Land</h1>
       <div className="paragraph">
-        <p className="font-face-nor">
+        <p>
           Welcome great warriors. Venture forth into the land of Valhalla!
           Adventure, danger, and ancient magic await behind the great gates of
           Odin. Here there are rollercoasters, cured meats, and ales for every
