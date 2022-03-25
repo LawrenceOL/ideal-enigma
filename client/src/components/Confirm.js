@@ -1,7 +1,7 @@
 const Confirm = () => {
   return (
-    <div>
-      Congratulations warrior! You are officially welcome to enter Valhalla
+    <div className="Confirm">
+      Congratulations warrior, you are officially welcome to enter Valhalla
       Land!
     </div>
   )

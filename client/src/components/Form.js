@@ -43,7 +43,6 @@ const Form = ({ info, handleChange, submitForm }) => {
           // name=''
           placeholder="MM/YY"
         />
-
         <input type="submit" value="Submit"></input>
       </form>
     </div>
