@@ -24,6 +24,206 @@ const main = async () => {
     {
       ticket_type: 'General Admission',
       customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
+    },
+    {
+      ticket_type: 'General Admission',
+      customer_id: null
     }
   ]
 
