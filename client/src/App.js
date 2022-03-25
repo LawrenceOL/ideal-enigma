@@ -8,21 +8,15 @@ import Confirm from './components/Confirm'
 import './styles/App.css'
 
 function App() {
-  // const [tickets, setTickets] = useState('')
   const [info, setInfo] = useState({
     first_name: '',
     last_name: '',
     email: '',
-    phone: ''
+    phone: '',
+    ticket_id: ''
   })
 
   let navigate = useNavigate()
-  // Fx needed to store the first 3 input values (axios.post), the last 2 values need to be reset
-
-  // const getTickets = () => {
-  //   let tickets = await axios.get('http://localhost:3001/ticketing')
-  //   setTickets(tickets)
-  // }
 
   const handleChange = (e) => {
     const updatedForm = {
@@ -34,15 +28,25 @@ function App() {
 
   const submitForm = async (e) => {
     e.preventDefault()
-    console.log('submit')
-    let userInfo = await axios.post('http://localhost:3001/form', info)
+    const ticketId = await getTicketId().then((temp) => temp.data.tickets._id)
+
+    await setInfo({ ...info, ticket_id: `${ticketId}` })
+
+    await axios.post('http://localhost:3001/form', info)
     navigate('/confirm')
     setInfo({
       first_name: '',
       last_name: '',
       email: '',
-      phone: ''
+      phone: '',
+      ticket_id: ''
     })
+  }
+
+  const getTicketId = async () => {
+    const ticketId = await axios.get('http://localhost:3001/ticketId')
+    console.log(ticketId)
+    return ticketId
   }
 
   return (
