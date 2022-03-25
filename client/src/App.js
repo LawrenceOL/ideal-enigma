@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Routes, Route, useNavigate } from 'react-router-dom'
-import { useState, use } from 'react'
+import { useState } from 'react'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Form from './components/Form'
@@ -8,21 +8,15 @@ import Confirm from './components/Confirm'
 import './styles/App.css'
 
 function App() {
-  // const [tickets, setTickets] = useState('')
   const [info, setInfo] = useState({
     first_name: '',
     last_name: '',
     email: '',
-    phone: ''
+    phone: '',
+    ticket_id: null
   })
 
   let navigate = useNavigate()
-  // Fx needed to store the first 3 input values (axios.post), the last 2 values need to be reset
-
-  // const getTickets = () => {
-  //   let tickets = await axios.get('http://localhost:3001/ticketing')
-  //   setTickets(tickets)
-  // }
 
   const handleChange = (e) => {
     const updatedForm = {
@@ -34,15 +28,23 @@ function App() {
 
   const submitForm = async (e) => {
     e.preventDefault()
-    console.log('submit')
-    let userInfo = await axios.post('http://localhost:3001/form', info)
+    const ticketId = await getRandomTicketId()
+    setInfo({ ...info, ticket_id: ticketId })
+    await axios.post('http://localhost:3001/form', info)
     navigate('/confirm')
     setInfo({
       first_name: '',
       last_name: '',
       email: '',
-      phone: ''
+      phone: '',
+      ticket_id: null
     })
+  }
+
+  const getRandomTicketId = async () => {
+    const ticketId = await axios.get('http://localhost:3001/ticketId')
+    console.log(ticketId)
+    return ticketId
   }
 
   return (

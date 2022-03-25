@@ -7,7 +7,11 @@ const Home = () => {
   let [customerCount, setCustomerCount] = useState(0)
   let [remainingTickets, setRemainingTickets] = useState(0)
 
-  const getRemainingTickets = useEffect(async () => {
+  useEffect(() => {
+    updateRemainingTickets()
+  }, [customerCount])
+
+  const updateRemainingTickets = async () => {
     const newTicketCount = await axios.get('http://localhost:3001/ticketcount')
     const newCustomerCount = await axios
       .get('http://localhost:3001/customercount')
@@ -15,7 +19,7 @@ const Home = () => {
     setTicketCount(newTicketCount.data.tickets)
     setCustomerCount(newCustomerCount)
     setRemainingTickets(ticketCount - customerCount)
-  }, [customerCount])
+  }
 
   return (
     <div className="Home">
