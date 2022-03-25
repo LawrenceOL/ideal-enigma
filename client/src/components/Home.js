@@ -24,18 +24,20 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="paragraph">
-        <p>
+        <p className="font-face-nor">
           Welcome great warriors. Venture forth into the land of Valhalla!
           Adventure, danger, and ancient magic await behind the great gates of
           Odin. Here there are rollercoasters, cured meats, and ales for every
           kind of viking. Test your courage on The Summit of Ragnar, or relax
           down Still Fjord ... destiny is yours!
+          <br />
+          <br />
+          {`Remaining Tokens: ${remainingTickets}`}
+          <br />
+          <Link to="/form">
+            <button>Purchase Here</button>
+          </Link>
         </p>
-        <Link to="/form">
-          <button>
-            Tokens Available Here {`(Remaining: ${remainingTickets})`}
-          </button>
-        </Link>
       </div>
     </div>
   )
