@@ -4,6 +4,7 @@ const cors = require('cors')
 const logger = require('morgan')
 const db = require('./db')
 const customersController = require('./controllers/customersController.js')
+const ticketsController = require('./controllers/ticketsController.js')
 
 //middleware goes here
 
@@ -22,6 +23,7 @@ app.get('/', (req, res) => {
 
 app.get('/form', customersController.getForm)
 app.post('/form', customersController.createCustomer)
+app.get('/ticketing', ticketsController.getAllTickets)
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
