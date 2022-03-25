@@ -12,11 +12,9 @@ const createCustomer = async (req, res) => {
     const customer = await new Customer(req.body)
 
     await customer.save()
-    return res.status(201).json({
-      customer
-    })
+    return res.status(201).json({ customer })
   } catch (error) {
-    return res.status(500).json({ error: error.message })
+    return res.status(400).json({ error: error.message })
   }
 }
 

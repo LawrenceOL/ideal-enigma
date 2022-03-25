@@ -2,8 +2,8 @@
 const express = require('express')
 const cors = require('cors')
 const logger = require('morgan')
-const customersController = require('./controllers/customersController.js')
 const db = require('./db')
+const customersController = require('./controllers/customersController.js')
 
 //middleware goes here
 
