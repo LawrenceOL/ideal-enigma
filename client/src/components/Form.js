@@ -5,16 +5,16 @@ const Form = ({ info, handleChange, submitForm }) => {
       <form onSubmit={submitForm}>
         <input
           type="text"
-          value={info.first}
+          value={info.first_name}
           onChange={handleChange}
-          name="first"
+          name="first_name"
           placeholder="First Name"
         />
         <input
           type="text"
-          value={info.last}
+          value={info.last_name}
           onChange={handleChange}
-          name="last"
+          name="last_name"
           placeholder="Last Name"
         />
         <input
@@ -23,6 +23,13 @@ const Form = ({ info, handleChange, submitForm }) => {
           onChange={handleChange}
           name="email"
           placeholder="Email"
+        />
+        <input
+          type="text"
+          value={info.phone}
+          onChange={handleChange}
+          name="phone"
+          placeholder="Phone"
         />
         <input
           type="text"
@@ -36,7 +43,7 @@ const Form = ({ info, handleChange, submitForm }) => {
           // name=''
           placeholder="MM/YY"
         />
-        <button>Submit</button>
+        <input type="submit" value="Submit"></input>
       </form>
     </div>
   )

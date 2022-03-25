@@ -9,9 +9,10 @@ import './styles/App.css'
 
 function App() {
   const [info, setInfo] = useState({
-    first: '',
-    last: '',
-    email: ''
+    first_name: '',
+    last_name: '',
+    email: '',
+    phone: ''
   })
 
   let navigate = useNavigate()
@@ -25,8 +26,11 @@ function App() {
     setInfo(updatedForm)
   }
 
-  const submitForm = async () => {
-    let userInfo = await axios.post('/createCustomer', info)
+  const submitForm = async (e) => {
+    e.preventDefault()
+    console.log('submit')
+    let userInfo = await axios.post('http://localhost:3001/form', info)
+
     navigate('/confirm')
   }
 
