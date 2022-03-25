@@ -23,7 +23,12 @@ app.get('/', (req, res) => {
 
 app.get('/form', customersController.getForm)
 app.post('/form', customersController.createCustomer)
-app.get('/ticketing', ticketsController.getAllTickets)
+
+//gets number of tickets available
+app.get('/ticketcount', ticketsController.getTicketCount)
+
+//gets number of customers aka number of tickets sold
+app.get('/customercount', customersController.getCustomerCount)
 
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
