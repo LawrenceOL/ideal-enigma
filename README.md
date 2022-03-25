@@ -1,4 +1,4 @@
-# Full Stackathon: _ideal-enigma_
+# Full Stackathon: _Valhalla Land Ticketing System_
 
 ---
 
@@ -8,11 +8,9 @@
 
 ### **_Description_**
 
-This app serves as an amusement park ticketing service. To purchase a ticket, simply enter your information, click to confirm, and that's it! You're all ready to embark on the Nordic adventure of your dreams!
+This app serves as an amusement park ticketing service for the imaginary theme park Valhalla Land. To purchase a ticket, simply enter your information, click to confirm, and that's it! You're all ready to embark on the Nordic adventure of your dreams!
 
 <br>
-
-_(Add Structure & Logic Here Later)_
 
 ---
 
@@ -27,4 +25,4 @@ _(Add Structure & Logic Here Later)_
 
 **_Credits_**
 
-Instruction and Guidance: Michael Lackey | John Jacobs
+[Viking favicon image from user arispen on OpenGameArt.Org](https://opengameart.org/users/arispen)
