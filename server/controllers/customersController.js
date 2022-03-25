@@ -7,7 +7,7 @@ const getForm = (request, response) => {
 }
 
 const createCustomer = async (req, res) => {
-  console.log(req.body)
+  // console.log(req.body)
   try {
     const customer = await new Customer(req.body)
 
