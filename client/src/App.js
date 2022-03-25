@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { Routes, Route, useNavigate } from 'react-router-dom'
-import { useState, use } from 'react'
+import { useState } from 'react'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Form from './components/Form'
