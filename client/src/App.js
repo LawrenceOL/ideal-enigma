@@ -30,8 +30,13 @@ function App() {
     e.preventDefault()
     console.log('submit')
     let userInfo = await axios.post('http://localhost:3001/form', info)
-
     navigate('/confirm')
+    setInfo({
+      first_name: '',
+      last_name: '',
+      email: '',
+      phone: ''
+    })
   }
 
   return (
