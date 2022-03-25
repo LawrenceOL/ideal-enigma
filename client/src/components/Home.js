@@ -6,9 +6,11 @@ const Home = () => {
       <div className="paragraph">
         <p>
           Welcome great warriors. Venture forth into the land of Valhalla!
-          Adventure, danger, and Adventure awaits ...{' '}
-          <button>Tokens Available Here</button>
+          Adventure, danger, and ancient magic await behind the gates
         </p>
+        <Link to="/form">
+          <button>Tokens Available Here</button>
+        </Link>
       </div>
     </div>
   )

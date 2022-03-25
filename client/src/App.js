@@ -26,7 +26,7 @@ function App() {
   }
 
   const submitForm = async () => {
-    // let userInfo = await axios.post('/createCustomer', info)
+    let userInfo = await axios.post('/createCustomer', info)
     navigate('/confirm')
   }
 

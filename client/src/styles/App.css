@@ -64,6 +64,17 @@ body {
   color: black;
 }
 
+.Home button {
+  display: block;
+  text-decoration: none;
+  margin: auto;
+  font-size: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-family: 'Caesar Dressing', cursive;
+  letter-spacing: 0.15em;
+}
+
 .Form {
   margin-top: 4em;
   position: absolute;
